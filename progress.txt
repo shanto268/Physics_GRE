@@ -1,6 +1,7 @@
 Started the "Conquering ... physics GRE" book.
 
-Started with chapter on QM.
+Started with chapter on Special Relativity.
+Done with Special Relativity, now need to finish the exercises
 
 Plan of chapter study:
 0) Special Relativity

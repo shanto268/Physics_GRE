@@ -1,0 +1,116 @@
+Notes on Special Relativity
+- Sadman Ahmed Shanto
+
+=========================================================================================================================
+There are two simple postulates from which all of special relativity follows:
+    1. The speed of light in vacuum is a constant (denoted c) in all inertial reference frames.
+    2. The laws of physics are identical in all inertial reference frames.
+* inertial reference frame, which for the purposes of the GRE just means an observer traveling at constant velocity
+
+=========================================================================================================================
+There are two types of transformations:
+1) Galilean transformations: used for speeds v << c
+example:
+    S: stationary system:: (t, x)
+    S': moving system at constant speed v:: (t′, x′)
+    IC: x=x'=0 at t=t'=0
+    Assumption: classical mechanics, clocks tick at the same rate everywhere, so t' = t .
+    equations:
+    t′ = t
+    x′ = x − vt
+    Inverse of variables: flip the sign of v
+        t = t'
+        x = x' + vt
+
+2) Lorentzian transformations: for v ~ c
+example:
+    S: stationary system:: (t, x)
+    S': moving system at constant speed v:: (t′, x′)
+    IC: x=x'=0 at t=t'=0
+    Assumption: The speed of light in vacuum is a constant (denoted c) in all inertial reference frames.
+    equations:
+    t' = γ (t − (v/c^2) x)
+    x′ = γ (x − vt)
+    Inverse of variables: flip the sign of v
+        t = γ (t' + (v/c^2) x')
+        x = γ (x' + vt')
+    γ is the Lorentz factor
+    γ = 1 / (1- (v^2/c^2)) ^ 1/2
+
+=========================================================================================================================
+Simultaneity:
+    Simultaneous events in one frame are not simulatenous in the reference frame.
+
+Time Dilation:
+    The relativistic effect that results in moving clocks running slower by a factor of γ relative to a stationary clock.
+    equation:
+
+        del_t = γ*del_t′ (for a fixed x′)
+
+For `a given interval of time that elapses in the moving frame S′, more time elapses in the stationary frame, by a factor of γ .
+
+Lorentz/Length Contraction:
+   The relativistic phenomenon that  moving objects are shortened by a factor of γ . 
+   equation:
+
+        L′ = γ*L (for a fixed t).
+        del_x′ = γ*del_x (for a fixed t).
+
+L, the length as measured in S, is smaller than L′.
+
+=========================================================================================================================
+Velocity Additions:
+Suppose S′ travels at velocity v, and the ball in S'' travels at u wrt S'. Using the Lorentz transformation, the speed of 
+the ball, w, as seen from S is
+    w = (v + u)/ (1 + (uv)/(c^2) )
+
+Case 1:
+    If u and v are small compared to c, then the classical velocity addition result follows.
+Case 2:
+    If u is c, then w = c.
+
+=========================================================================================================================
+4-Vectors:
+
+4-vector is a vector that contains information of space-time.
+notation:
+    x^mu = <x^0,x^1,x^2,x^3>
+In this notation, the superscript "mu" is again a label that takes
+the values 0, 1, 2, or 3.
+equation:
+    x^mu = [ct,x,y,z]
+
+Other four vectors:
+    energy momentum: p^mu = [E/c,γ*m*v_x, γ*m*v_y ,γ*m*v_z ]
+    current density: j^mu = [rho*c, J_x. J_y, J_z] 
+    wave factor: k^mu = [w/c, k_x, k_y, k_z]
+
+=========================================================================================================================
+Lorentz Matrix Transformation:
+    Lorentz Matrix Transformation is a matrix that maps x^mu to x^mu'. Let the that matrix be M and each element of the 
+    matrix is a function of beta and gamma. a Lorentz transformation is often called a boost.
+        beta = v / c
+            beta = 0 means that S' is stationary wrt to S
+    equation:
+        x^mu' = M x^mu (M is 4 by 4)
+    equation in 1D:
+        [ct',x'] = [[gamma, - gamma*beta],[-gamma*beta, gamma]]*[ct,x]
+
+    if M is identity matrix then S and S' are not moving wrt to each other.
+
+=========================================================================================================================
+Energy Momentum Four Vector:
+
+p^mu = [E_0/c, 0,0,0] for a  particle of mass m in its rest frame (its velocity is zero). Its rest energy, E_0 = mc^2
+
+In the inertial frame, the zeroth component of p^mu will still contain a contribution from the rest energy, and we
+define the remainder as the kinetic energy
+    T = E - E_0 = E - mc^2
+
+Using the Lorentz transformation, the energy and kinetic energy in a frame other than the rest frame is given by
+        E=γmc^2
+        T=(γ−1)mc^2 --> equation 1
+
+Taylor expand this equation 1 for v ≪ c, leads to the classical T = 1/2 mv^2 formulation
+
+=========================================================================================================================
