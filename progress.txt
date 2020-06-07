@@ -3,12 +3,12 @@ Started the "Conquering ... physics GRE" book.
 Started with chapter on QM.
 
 Plan of chapter study:
+0) Special Relativity
 1) QM
 2) CM
 3) TSM
-4) Special Relativity
-5) EM 
-6) Optics
-7) Lab Methods
-8) Nuclear, Condensed Matter and Particle
+4) EM 
+5) Optics
+6) Lab Methods
+7) Nuclear, Condensed Matter and Particle
 
